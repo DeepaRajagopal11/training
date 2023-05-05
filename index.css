@@ -1,0 +1,210 @@
+/* CSS: Cascading Stylesheet */
+/* Use a selector to target a tag then apply styles to it */
+/* "*" means "select all" */
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th,
+td {
+	border: 1px solid black;
+}
+
+/* ul,
+ol {
+	list-style: upper-roman;
+} */
+
+body {
+	margin: 0;
+	/* font-family: "Sigmar", cursive; */
+}
+
+span {
+	color: red;
+}
+
+/* Target an id, we use "#" */
+/* #box1 {
+	background-color: blueviolet;
+}
+#box2 {
+	background-color: red;
+} */
+
+#box3 {
+	background-color: green !important;
+}
+
+/* Target a class, we use "." */
+.box-100 {
+	height: 100px;
+	width: 100px;
+}
+
+.border-1 {
+	border: 1px solid black;
+}
+
+.bg-blueviolet {
+	background-color: blueviolet !important;
+}
+
+.bg-red {
+	background-color: red !important;
+}
+
+.bg-green {
+	background-color: green;
+}
+
+.shipping-container {
+	height: 150px;
+	width: 150px;
+	background-color: green;
+}
+
+.awesome-button {
+	padding: 5px 10px;
+	margin: 5px;
+}
+
+.relative-box {
+	position: relative;
+	background-color: brown;
+	left: 50px;
+	top: 50px;
+}
+
+.absolute-box {
+	background-color: aquamarine;
+	position: absolute;
+	top: 0px;
+}
+
+.fixed-box {
+	background-color: red;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}
+
+.sticky-box {
+	background-color: rgb(0, 136, 255);
+	position: sticky;
+	bottom: 20px;
+}
+
+.nav {
+	width: 100%;
+	height: 20px;
+	background-color: rgb(0, 136, 255);
+	position: sticky;
+	top: 0px;
+}
+
+.some-div {
+	position: static;
+	top: 0px;
+	left: 50px;
+}
+
+/* descendant selector example */
+/* target all <p> tags enclosed in a <div> NO MATTER HOW DEEPLY NESTED */
+div p {
+	color: rgb(0, 136, 255);
+}
+
+section p {
+	color: red;
+}
+
+/* child selector example */
+section > h1 {
+	color: green;
+}
+
+div > #mock-title {
+	color: rgb(255, 221, 127);
+}
+
+.mock-div > .mock-title {
+	color: rgb(253, 127, 255);
+}
+
+div > h1 {
+	color: aquamarine;
+}
+
+/* Adjacent Sibling Example */
+div + p {
+	background-color: rgb(183, 157, 52);
+}
+
+/* pseudo-classes */
+a {
+	color: rgb(42, 162, 184);
+}
+
+a:active {
+	background-color: blue;
+}
+
+a:hover {
+	color: rgb(218, 78, 188);
+}
+
+.youtube-link:hover {
+	color: rgb(183, 157, 52);
+}
+
+/* 2n is every multiple of 2 children */
+ul > li:nth-child(2n) {
+	background-color: blueviolet;
+}
+
+ul > li:nth-child(3) {
+	background-color: brown;
+	color: white;
+}
+
+ul > li:nth-child(odd) {
+	color: aquamarine;
+}
+
+ol > li:nth-child(2n + 1) {
+	background-color: aquamarine;
+}
+/* n begins at 0 */
+/* 1, 3, 5, 7 */
+
+/* Flexbox */
+.d-flex {
+	display: flex;
+}
+
+.container {
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
+	/* align-items: center; */
+	/* flex-direction: row; */
+	/* gap: 10px 50px; */
+}
+
+.h-10 {
+	height: 80px;
+}
+
+.h-5 {
+	height: 40px;
+}
+
+.text-xl {
+	font-size: x-large;
+}
+
+.self-center {
+	align-self: center;
+}
