@@ -1,0 +1,32 @@
+.canvas {
+	height: 430px;
+	width: 400px;
+	background-color: rgb(117, 127, 135);
+	display: flex;
+}
+
+.right-orange {
+	width: 160px;
+	height: 310px;
+	background-color: orange;
+}
+
+.left-canvas {
+	width: 240px;
+	height: 100%;
+	background-color: rgb(53, 131, 117);
+}
+.red-square {
+	margin-left: 70px;
+	width: 180px;
+	height: 50px;
+	background-color: red;
+}
+
+.grey-square {
+	margin-left: 100px;
+	margin-top: 60px;
+	width: 160px;
+	height: 140px;
+	background-color: grey;
+}
